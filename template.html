@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <svg class="logo__icon">
+                    <use href="../dist/img/icons.svg#icon-spoon-knife"></use>
+                </svg>
+                <span class="logo__text">forkify</span>
+            </div>
+            <div class="search"> 
+               <input type="text"
+               placeholder="search over 1,000,000 recipes..."
+               class="search__here">
+                <button class="search__box">
+                    <svg class="search__logo">
+                        <use href="../dist/img/icons.svg#icon-search"></use>
+                    </svg>
+                    <span class="search__text">search</span>
+                </button>
+              
+            </div>
+            
+                <!-- <div class="btn__add">
+                    <svg class="btn__logo">
+                        <use href="../dist/img/icons.svg#icon-edit"></use>
+                    </svg>
+                    <span class="btn__recipe">add recipe</span>
+                </div>
+                <div class="btn__add">
+                    <svg class="btn__logo">
+                        <use href="../dist/img/icons.svg"></use>
+                    </svg>
+                    <span class="btn__recipe">bookmarks</span>
+                </div> -->
+                <div class="like">
+                    <div class=" like__panel" >
+                        lv
+                    </div>
+                    
+                    <ul class="like__list">
+                        <!-- <li>
+                            <a class = "like__link like__link--active" href="#${recipe.id}">
+                               <figure >
+                                   <img src="${recipe.image}" alt=image class="like__fig">
+                               </figure>
+                               <div class="like__pages">
+                                  <h4 class="like__name">${reduceTitle(recipe.title)}</h4>
+                                  <p class="like__author"> vegetarian: ${recipe.vegetarian}</p>
+                               </div>
+                            </a> 
+                        </li> -->
+                    </ul> 
+
+                </div>
+
+            
+        </div>
+
+        <div class="body">
+            <div class="results">
+                <ul class="results__list">
+                    <!-- <li>
+                        <a class = "results__link results__link--active" href="">
+                            <figure>
+                                <img src="../src/img/ivana-cajina-_7LbC5J-jw4-unsplash.jpg" alt="test" class="results__fig">
+                            </figure>
+                            <div class="results__pages">
+                               <h4 class="results__name">pasta with tomato...</h4>
+                               <p class="results__author"> the prince</p>
+                            </div>
+                        </a> 
+                    </li> -->
+
+                    <!-- <li>
+                        <a class = "results__link results__link--active" href="">
+                            <figure class="results__fig">
+                                <img src="" alt="test">
+                            </figure>
+                            <div class="results__pages">
+                               <h4 class="results__name">pasta with tomato...</h4>
+                               <p class="results__author"> the prince</p>
+                            </div>
+                        </a> 
+                    </li> -->
+                </ul> 
+                <div class="pages">
+                    <!-- <button class="pages__next">
+                        <div class="pages__text">page 2</div> 
+                    </button>
+                    <button class="pages__prev">
+                        <div class="pages__text">page 3</div> 
+                    </button> -->
+                </div>
+                <div class="copyright">
+                    &copy; copyright by Oseiwe to be used to practice and develop your skills
+                </div>
+        
+            </div>
+    
+            <div class="recipe">
+                <!-- <figure class="recipe__box">
+                    <img src="" alt="" class="recipe__img">
+                    <h1 class="recipe__title">
+                        <span class="span">foodie cake foodie cake</span>
+                    </h1>
+                </figure>
+                <div class="recipe__details">
+                    <div class="recipe__info">
+                        <svg class="recipe__info--icon">
+                            <use href="../dist/img/icons.svg#icon-time"></use>
+                        </svg> 
+                        <span class="recipe__info--data  recipe__minute">45</span>
+                        <span class="recipe__info--text">minutes</span>
+                    </div>
+
+                    <div class="recipe__info recipe__info--2">
+                        <svg class="recipe__info--icon">
+                            <use href="../dist/img/icons.svg#icon-users"></use>
+                        </svg>
+                        <span class="recipe__info--data  recipe__people">4</span>
+                        <span class="recipe__info--text">servings</span>
+
+                        <div class="recipe__info--buttons">
+                                <div class="recipe__info--btn">-</div>
+                                <i class="fa-thin fa-arrow-rotate-right"></i>
+                           
+                                <div class="recipe__info--btn add">+</div>
+                               
+                            
+                        </div>
+                    </div>
+                    <div class="recipe__locate">
+                        <svg class="recipe__locate--icon">
+                            <use href="../dist/img/icons.svg#icon-bookmark-outline"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="recipe__ingredient">
+                    <h3 class="recipe__ingredient--heading"> recipe  INGREDIENTS  </h3>
+                    <ul class="recipe__ingredient--list">
+                        <li class="recipe__ingredient--item">fish</li>
+                        <li class="recipe__ingredient--item">bean</li>
+                        <li class="recipe__ingredient--item">pork</li>
+                        <li class="recipe__ingredient--item">noodles</li>
+                        <li class="recipe__ingredient--item">onions</li>
+                        <li class="recipe__ingredient--item">eggs</li>
+                        <li class="recipe__ingredient--item">fish</li>
+                        <li class="recipe__ingredient--item">bean</li>
+                        <li class="recipe__ingredient--item">pork</li>
+                        <li class="recipe__ingredient--item">noodles</li>
+                        <li class="recipe__ingredient--item">onions</li>
+                        <li class="recipe__ingredient--item">eggs</li>
+                    </ul>
+
+                    <button class="recipe__directions--btn">
+                        add to shooping list 
+                    </button>
+                </div>
+
+                <div class="recipe__directions">
+                    <div class="recipe__directions--heading">
+                        how to cook it
+                    </div>
+                    <div class="recipe__directions--para">
+                        This recipe was carefully designed and tested by <span class="all"> All Recipes</span> All Recipes. Please check out directions at their website.
+                    </div>
+                    <button class="recipe__directions--btn">
+                         directions
+                    </button>
+                </div> -->
+            </div>
+    
+            <div class="shopping">
+                <div class="shopping__title">shopping list</div>
+                <ul class="shopping__list">
+                    <!-- <li class=" shopping__item">
+                        <div class="shopping__count">
+                            <input type="number" value="29" class="shopping__number">
+                        </div>
+                        <p class="shopping__description">pasta beans pasta beans pasta beans</p>
+                        <button class="shopping__del"><span class="shopping__icon"> * </span></button>
+                    </li>
+                    <li class="shopping__item">
+                        <div class="shopping__count">
+                            <input type="number" value="29" class="shopping__number">
+                        </div>
+                        <p class="shopping__description">pasta beans</p>
+                        <button class="shopping__del"><span class="shopping__icon"> * </span></button>
+                    </li>
+                    <li class="shopping__item">
+                        <div class="shopping__count">
+                            <input type="number" value="29" class="shopping__number">
+                        </div>
+                        <p class="shopping__description">pasta beans</p>
+                        <button class="shopping__del"><span class="shopping__icon"> * </span></button>
+                    </li>
+                    <li class="shopping__item">
+                        <div class="shopping__count">
+                            <input type="number" value="29" class="shopping__number">
+                        </div>
+                        <p class="shopping__description">pasta beans</p>
+                        <button class="shopping__del"><span class="shopping__icon"> * </span></button>
+                    </li>
+                    <li class="shopping__item">
+                        <div class="shopping__count">
+                            <input type="number" value="29" class="shopping__number">
+                        </div>
+                        <p class="shopping__description">pasta beans</p>
+                        <button class="shopping__del"><span class="shopping__icon"> * </span></button>
+                    </li>
+                    <li class="shopping__item">
+                        <div class="shopping__count">
+                            <input type="number" value="29" class="shopping__number">
+                        </div>
+                        <p class="shopping__description">pasta beans</p>
+                        <button class="shopping__del"><span class="shopping__icon"> * </span></button>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+    <script src="bundle.js"></script>
+   
+</body>
+</html>
+
+
+
+<!-- <svg class="recipe__info--btn">
+    <use xlink:href="../dist/img/symbol-defs.svg#icon-add-outline"></use>
+</svg>
+
+<svg class="recipe__info--btn">
+    <use xlink:href="../dist/img/symbol-defs.svg#icon-minus-circle"></use>
+</svg> -->

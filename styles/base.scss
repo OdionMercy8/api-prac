@@ -1,0 +1,31 @@
+$pri-color:#fbdb89;
+$sec-color: #f48982;
+$text-white: #f9f5f3;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.container {
+  display: grid;
+  grid-template-rows: 10rem minmax(100rem, auto);
+  //grid-template-columns: 1.1fr 2fr 1.1fr;
+  background-color: #f9f5f3;
+  margin: 10rem;
+  font-size: 3rem;
+  min-height: calc(100vh - 2 * 8vh); 
+  border-radius: 5px;
+  overflow: hidden;
+}
